@@ -9,6 +9,7 @@ A bash script for spotify-player to display current song's album art in feh
 * inotify
 * feh
 * imagemagick
+* The "enable_cover_image_cache" option in app.toml set to true for spotify-player
 
 
 # What does this script do?
