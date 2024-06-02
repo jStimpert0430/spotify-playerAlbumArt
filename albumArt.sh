@@ -12,9 +12,9 @@ while read -r dir action file; do
 	if [ "$file" = "a.png" ]; then
 		echo "This file is a.png"
 	else
-		echo "album_art: renaming album art..."
+		echo "album_art: converting $file to a.png..."
 		magick "$dir$file" $dir/a.png
-		echo "album_art: removing original cache image..."
+		echo "album_art: removing $file..."
 		rm "$dir$file"
     fi
 done
